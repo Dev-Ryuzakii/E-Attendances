@@ -35,7 +35,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/E-Attendances.git
+git clone https://github.com/Dev-Ryuzakii/E-Attendances.git
 Navigate to the Project Directory:
 
 bash
