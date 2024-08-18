@@ -1,6 +1,6 @@
 <script>
-import Button from './Button.vue';
-import image from '/src/assets/signup-img-p.png'
+import Button from '../Admin/Button.vue';
+import image from '/src/assets/signup-lect-p.png'
 
 export default {
   components: {
@@ -39,22 +39,23 @@ export default {
       </label>
 
       <div class="checkin">
-          <div>
-            <input type="checkbox" name="" id="checkbox">
-          </div>
+        <div>
+          <input type="checkbox" name="" id="checkbox">
+        </div>
 
-          <div>
-            <p>I agree with the <a href="#">Term</a> & <a href="#">Condition</a></p>
-          </div>
+        <div>
+          <p>I agree with the <a href="#">Term</a> & <a href="#">Condition</a></p>
+        </div>
       </div>
-        
+
+
       
       <div class="bottom">
         <Button title="Sign Up" />
         <p>Have an account? <a href="">login</a></p>
         <h5>or</h5>
+
       </div>
-      
     </div>
 
     <div class="img-space">
@@ -68,7 +69,7 @@ export default {
   display: flex;
   justify-content: space-between;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #D4D4D4;
+  background-color: #FFFFFF;
   padding: 30px 40px;
   opacity: 90%;
  }
@@ -89,7 +90,7 @@ export default {
  }
 
  .text-field label input {
-  background-color: #D4D4D4;
+  background-color: #FFFFFF;
   color: black;
   width: 60%;
   border-radius: 5px;
@@ -110,21 +111,30 @@ export default {
 
  .checkin {
   display: flex;
-  align-items: center
+  align-items: center;
+  margin: 2px 10px;
+ }
+
+ .checkin input {
+  /* height: 50px; */
  }
 
  .img-space {
-  /* margin: 0; */
+  background-color:  #009688;
+  border-radius: 80px 0px 80px 0px;
   padding: 0;
   top: 0;
-  margin-top: -35px;
+  margin-top: 0;
+  margin-right: -90px;
+  padding: 20px 60px;
+  
   /* background-image: url('/E-attendance/src/assets/signup-img-p.png'); */
   /* background-repeat: no-repeat; */
 
  }
 
  .img-space img {
-  width: 700px;
+  width: 600px;
  }
 
  .bottom h5 {
@@ -142,4 +152,6 @@ export default {
   height: 10px;
   margin: 0px 5px;
 }
+
+
 </style>
