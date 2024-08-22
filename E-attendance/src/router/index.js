@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import SignIn from '@/components/Lecturer/SignIn.vue'
-import SignUp from '@/components/Admin/SignUp.vue'
+import SignIn from '@/views/Lecturer/SignIn.vue'
+import SignUp from '@/views/Admin/SignUp.vue'
 import Home from '../views/Home.vue'
+import OtpPage from '@/components/OTP/OtpPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +14,7 @@ const router = createRouter({
     },
     { path: '/signup', component: SignUp, },
     { path: '/signin', component: SignIn, },
-
+    { path: '/getotp', component: OtpPage,},
   ]
 })
 
