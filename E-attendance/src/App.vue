@@ -1,9 +1,6 @@
 <script>
-import SignUp from './components/Admin/SignUp.vue'
-
 export default {
   components: {
-    SignUp,
   },
 
   data() {
@@ -15,10 +12,9 @@ export default {
 </script>
 
 <template>
-  <h1>Hello world</h1>
-  <hr>
-  <sign-up />
-  
+  <div>
+    <router-view></router-view>
+  </div>  
 </template>
 
 <style>

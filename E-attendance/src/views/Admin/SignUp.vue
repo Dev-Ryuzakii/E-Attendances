@@ -1,13 +1,16 @@
 <script>
-import Button from './Button.vue';
+import image from '/src/assets/signup-img-p.png'
+import LogButton from '@/components/UI/LogButton.vue';
 
 export default {
   components: {
-    Button
+    LogButton
   },
 
   data() {
-
+    return {
+      image: image,
+    }
   }
 }
 </script>
@@ -35,39 +38,44 @@ export default {
         <input type="number" class="special" placeholder="Enter your password again" required>
       </label>
 
-      <label for="">
-        <input type="checkbox" name="" id="checkbox">
-        <p>I agree with the <a href="#">Term</a> & <a href="#">Condition</a></p>
-      
-        
-      </label>
+      <div class="checkin">
+          <div>
+            <input type="checkbox" name="" id="checkbox">
+          </div>
 
-
-      
-      <div>
-        <Button title="Sign Up" />
-        <p>Have an account? <a href="">login</a></p>
-        <h4>or</h4>
-
+          <div>
+            <p>I agree with the <a href="#">Term</a> & <a href="#">Condition</a></p>
+          </div>
       </div>
+        
+      
+      <div class="bottom">
+        <log-button title="Sign Up" />
+        <p>Have an account? <a href="">login</a></p>
+        <h5>or</h5>
+      </div>
+      
     </div>
 
-    <div>
-      <img src="" alt="">
+    <div class="img-space">
+      <img :src="image" />
     </div>
   </div>
 </template>
 
 <style scoped>
  .container {
+  display: flex;
+  justify-content: space-between;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: #D4D4D4;
-  padding: 30px 10px;
+  padding: 30px 40px;
   opacity: 90%;
  }
 
  .text-field {
-  padding: 20px 40px;
+  padding: 70px 0px;
+  width: 900px
  }
 
  .text-field label {
@@ -83,7 +91,7 @@ export default {
  .text-field label input {
   background-color: #D4D4D4;
   color: black;
-  width: 40%;
+  width: 60%;
   border-radius: 5px;
   padding: 10px 10px;
   border: 1px solid black;
@@ -100,12 +108,38 @@ export default {
   color: black;
  }
 
- input #checkbox {
-  display: none;
-  width: 0;
-  margin: 0;
+ .checkin {
   display: flex;
-  /* height: 20px; */
-  /* justify-content: space-around; */
+  align-items: center
  }
+
+ .img-space {
+  /* margin: 0; */
+  padding: 0;
+  top: 0;
+  margin-top: -35px;
+  /* background-image: url('/E-attendance/src/assets/signup-img-p.png'); */
+  /* background-repeat: no-repeat; */
+
+ }
+
+ .img-space img {
+  width: 700px;
+ }
+
+ .bottom h5 {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 320px 0px 0px;
+  color: grey;
+  font-weight: 200;
+  font-size: 15px;
+}
+.bottom h5:before, h5:after{
+  content: '';
+  flex: 1 1;
+  border-bottom: 1px solid;
+  height: 10px;
+  margin: 0px 5px;
+}
 </style>

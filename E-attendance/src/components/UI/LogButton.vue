@@ -23,10 +23,10 @@ export default {
     margin: 10px 10px;
  }
   button {
-    width: 40%;
+    width: 62%;
     font-weight: 600;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: #009688;
     color: white;
     border-radius: 5px;
