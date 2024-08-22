@@ -1,5 +1,5 @@
 <script>
-import Button from '../Admin/Button.vue';
+import Button from '../UI/Button.vue';
 import image from '/src/assets/signup-lect-p.png'
 
 export default {
