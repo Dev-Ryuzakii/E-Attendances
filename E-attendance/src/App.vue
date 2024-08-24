@@ -12,11 +12,13 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div class="app">
     <router-view></router-view>
   </div>  
 </template>
 
 <style>
-
+ div.app {
+  /* width: 100vw; */
+ }
 </style>

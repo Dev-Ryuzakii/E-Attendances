@@ -17,6 +17,7 @@ export default {
 
 <template>
   <div class="container">
+    
     <div class="text-field">
       <label for="">
         <b>Full Name</b>
@@ -69,14 +70,15 @@ export default {
   display: flex;
   justify-content: space-between;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #FFFFFF;
-  padding: 30px 40px;
+  background-color: #F5F5F5;
+  padding: 0px 40px;
   opacity: 90%;
  }
 
  .text-field {
   padding: 70px 0px;
-  width: 900px
+  width: 900px;
+  margin-top: 50px;
  }
 
  .text-field label {
@@ -90,20 +92,20 @@ export default {
  }
 
  .text-field label input {
-  background-color: #FFFFFF;
+  background-color: #F5F5F5;
   color: black;
   width: 60%;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px 10px;
-  border: 1px solid black;
+  border: 2px solid black;
  }
 
  input.special {
-  background-color: white;
+  /* background-color: ; */
  }
 
  .text-field label input:focus {
-  background-color: white;
+  background-color: whitesmoke;
  }
  .text-field label input::placeholder {
   color: black;
@@ -121,10 +123,11 @@ export default {
 
  .img-space {
   background-color:  #009688;
-  border-radius: 80px 0px 80px 0px;
+  border-radius: 100px 0px 100px 0px;
   padding: 0;
   top: 0;
-  margin-top: 0;
+  margin-top: -10px;
+  height: 1500px;
   margin-right: -90px;
   padding: 20px 60px;
   
