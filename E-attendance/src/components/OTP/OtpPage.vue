@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import LogButton from '../UI/LogButton.vue';
+// import LogButton from '../UI/LogButton.vue';
 import Otp from './OTP.vue'
 import { ref } from "vue"
 
