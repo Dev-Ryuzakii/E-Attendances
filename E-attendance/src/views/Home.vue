@@ -2,7 +2,7 @@
   <nav-bar />
 
   <div class="content">
-    <div>
+    <div class="home-info">
       <home-info />
     </div>
 
@@ -29,7 +29,13 @@ import HomeInfo from '@/components/UI/HomeInfo.vue';
   .content {
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 50px;
+    /* width: 1px; */
+    /* overflow: hidden; */
+    /* margin: auto; */
+  }
+  .home-info {
+    width: 900px;
   }
 
   .img-space {
@@ -37,7 +43,5 @@ import HomeInfo from '@/components/UI/HomeInfo.vue';
   }
   img {
     width: 700px;
-    
-
   }
 </style>

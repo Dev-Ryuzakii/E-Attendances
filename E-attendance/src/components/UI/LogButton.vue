@@ -29,7 +29,7 @@ export default {
     padding: 10px 0px;
     background-color: #009688;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
   }
 </style>

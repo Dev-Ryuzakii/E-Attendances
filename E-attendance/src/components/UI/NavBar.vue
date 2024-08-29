@@ -6,7 +6,9 @@ export default {
 
 <template>
   <nav>
-    <div class="logo-space">Logo</div>
+    <div class="logo-space">
+      <img src="/src/assets/EduAttend.png" alt="" srcset="">
+    </div>
 
     <div class="link-space">
       <ul>
@@ -28,31 +30,45 @@ export default {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: 20px;
     margin-top: -10px;
-    width: 100vw;
+    width: 100%;
     background-color: #009688;
     color: white;
-    margin-left: -8px;
+    margin-left: -10px;
     align-items: center;
+    padding: 0px 8px 0px 0px;
+    /* max-width: 100%; */
   }
 
   nav div {
-    padding: 20px 7px;
+    padding: 1px 5px;
   }
 
   .logo-space {
-    padding: 0px 25px;
+    padding: 0px 0px;
+    margin-left: -10px
   }
+
+  .logo-space img {
+    /* margin-left: 0px; */
+    width: 250px;
+    /* height: 90px; */
+  }
+  .link-space {
+    padding: 0px 0px 0px 0px;
+    margin-left: -20px;
+  }
+
   .link-space ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 10px 10px;
+    /* padding: 0px 7px 0px 20px; */
   }
   .link-space ul a {
     text-decoration: none;
     padding: 0px 10px;
     color: white;
-    margin: 10px 10px;
+    margin: 0px 70px 0px 0px;
 
   }
 </style>

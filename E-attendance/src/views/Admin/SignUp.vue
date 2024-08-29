@@ -16,7 +16,9 @@ export default {
 </script>
 
 <template>
+  <!-- <img src="/src/assets/EduAttend.png" :style=" { width: '200px', height: '150px'} " alt="" srcset=""> -->
   <div class="container">
+    <img src="../assets/homepage.png" class="logo" alt="" srcset="">
     <div class="text-field">
       <label for="">
         <b>Full Name</b>
@@ -68,14 +70,21 @@ export default {
   display: flex;
   justify-content: space-between;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #D4D4D4;
-  padding: 30px 40px;
+  background-color: #F5F5F5;
+  padding: 0px 40px;
   opacity: 90%;
+  width: 99%;
+ }
+ .logo img {
+  position: absolute;
+  width: 100px;
+  /* height: 50px */
  }
 
  .text-field {
+  margin-top: 50px;
   padding: 70px 0px;
-  width: 900px
+  width: 900px;
  }
 
  .text-field label {
@@ -114,19 +123,19 @@ export default {
  }
 
  .img-space {
-  /* margin: 0; */
+  background-color:  #009688;
+  border-radius: 100px 0px 100px 0px;
   padding: 0;
   top: 0;
-  margin-top: -35px;
-  /* background-image: url('/E-attendance/src/assets/signup-img-p.png'); */
-  /* background-repeat: no-repeat; */
-
+  margin-top: -10px;
+  height: 1500px;
+  margin-right: -90px;
+  padding: 20px 60px;
  }
 
  .img-space img {
   width: 700px;
  }
-
  .bottom h5 {
   display: flex;
   flex-direction: row;

@@ -32,7 +32,7 @@
         return false;
       }
     }
-
+``
     return true;
   }
 
@@ -82,21 +82,21 @@
       :class="{bounce: digits[ind] !== null}"
     >
   </div>
+  <div>
+  </div>
 </template>
 
-<style>
+<style scoped>
   .digit-box {
     height: 4rem;
     width: 2rem;
     border: 2px solid black;
     display: inline-block;
     border-radius: 5px;
-    margin: 5px;
-    padding: 15px;
+    margin: 5px 5px;
+    padding: 15px 15px;
     font-size: 3rem;
   }
-
-   
 
   .digit-box:focus {
     outline: 3px solid black;

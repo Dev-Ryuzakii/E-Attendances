@@ -1,49 +1,62 @@
 <script>
-import LogButton from '@/components/UI/LogButton.vue';
+// import LogButton from '@/components/UI/LogButton.vue';
 
 
 export default {
   components: {
-    LogButton
+    // LogButton
   }
 }
 </script>
 
 <template>
   <div>
-    <h2><i>E-Attendance</i></h2>
-    <h4><b>Attendance Managemet Solution</b></h4>
+    <h2>E-Attendance</h2>
+    <h3><b>Attendance Management <br> Solution</b></h3>
     <p>A streamlined platform for digitizing 
       and simplifying <br> attendance tracking 
       across educational institutions...
     </p>
 
-    <div :style="{ width: '300px'}">
-      <log-button title="Get Started" />
-    </div>
+    <button>Get Started</button>
+    
 
-</div>
+  </div>
 </template>
 
 <style scoped>
   div {
     display: grid;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
-    padding: 55px 20px
+    font-family: sans-serif;
+    padding: 55px 30px
   }
   h2 {
-    font-size: 45px;
-    margin: 2px 0px;
+    margin-top: 10px;
+    font-size: 55px;
+    margin-bottom: 2px;
+    font-style: italic;
+    font-weight: bolder;
   }
-  h4 {
-    font-size: 30px;
+  h3 {
+    font-size: 40px;
     margin: 10px 0px;
+    font-weight: 900;
   }
   p {
     font-weight: 200;
-    line-break:normal;
-    margin: 0px 0px;
+    line-break: normal;
+    margin-bottom: 65px;
+  }
+  button {
+    width: 200px;
+    /* height: 50px; */
+    background-color: #009688;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+    border: none;
+    border-radius: 10px; 
+    padding: 20px 0px;
   }
 
 </style>
